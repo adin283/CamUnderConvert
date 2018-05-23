@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.KevinLab.NameConvert</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>61DE8946-4ED7-4959-8FC2-7D7AF1B6A880</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>77E94D9A-5477-4446-8122-A65171CC609F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Kevin Hawk</string>
+	<key>description</key>
+	<string>CamelCase to UnderLine, or UnderLine to CamelCase</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>CamUnderConvert</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>cu</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Input Name to Convert</string>
+				<key>script</key>
+				<string>require_once('CamUnderConvert.php');
+
+$camUnderConvert = new CamUnderConvert();
+
+$camUnderConvert-&gt;convert('{query}');</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Underline to CamelCase, or CamelCase to Underline</string>
+				<key>title</key>
+				<string>Name Convert</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>61DE8946-4ED7-4959-8FC2-7D7AF1B6A880</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string></string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>77E94D9A-5477-4446-8122-A65171CC609F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>61DE8946-4ED7-4959-8FC2-7D7AF1B6A880</key>
+		<dict>
+			<key>xpos</key>
+			<integer>80</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+		<key>77E94D9A-5477-4446-8122-A65171CC609F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://blog.zhuwenbo.net/</string>
+</dict>
+</plist>
